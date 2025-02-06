@@ -153,6 +153,7 @@ body {
   line-height: 85px;
   margin: 20px 0;
 }
+
 .homeSec .homeSecLeft .homeLeftContent h1 span {
   background: linear-gradient(to top right, #41c5d5, #ffffff);
   -webkit-text-fill-color: transparent;
@@ -169,6 +170,14 @@ body {
 }
 
 /* From Uiverse.io by mrhyddenn */
+.homeSec .homeSecLeft .homeLeftContent .shadow__btn {
+  transition: all 0.3s ease-in-out;
+}
+
+.homeSec .homeSecLeft .homeLeftContent .shadow__btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
 .homeSec .homeSecLeft .homeLeftContent .shadow__btn {
   padding: 10px 20px;
   border: none;
@@ -257,8 +266,62 @@ body {
   bottom: 40px;
   height: 80%;
 }
-.homeSec .homeSecRight .ImgHome {
+.homeSec .homeSecRight .AnimationHome {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homeSec .homeSecRight .AnimationHome .ImgHome {
   width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}.homeSec .homeSecRight .AnimationHome #coniOne{
+  width: 30%;
+  position: absolute;
+  z-index: 10;
+  top: 80%;
+  right: 20px;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  rotate: -30deg;
+}.homeSec .homeSecRight .AnimationHome #coniTwo{
+  width: 50%;
+  position: absolute;
+  z-index: 10;
+  top: -20%;
+  left: 20px;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  rotate: 30deg;
+}.homeSec .homeSecRight .AnimationHome #coniThree{
+  width: 30%;
+  position: absolute;
+  z-index: 10;
+  top: 40%;
+  left: -17%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  rotate: 30deg;
+}.homeSec .homeSecRight .AnimationHome #coniThree{
+  width: 30%;
+  position: absolute;
+  z-index: 10;
+  top: 40%;
+  left: -10%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  rotate: 30deg;
+}.homeSec .homeSecRight .AnimationHome #coniFour{
+  width: 30%;
+  position: absolute;
+  z-index: 10;
+  top: 20%;
+  right: -10%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  rotate:40deg;
 }
 @media screen and (max-width: 767px) {
   .homeSec .homeSecLeft {
@@ -548,6 +611,7 @@ body {
   margin: 20px 0;
   line-height: 38px;
 }
+
 @media screen and (max-width: 991px) {
   .convirtSec .convirtSecRight h1 {
     font-size: 25px;
@@ -564,6 +628,7 @@ body {
     margin: 20px 0;
     line-height: 20px;
   }
+
 }
 /* CardsSec */
 .CardsSec {
@@ -572,8 +637,23 @@ body {
 .CardsSec .titleCardsSec {
   text-align: center;
 }
+/* .TExtCardsss .TExtcard{
+  margin: 50px 0;
+
+}
+.TExtCardsss .TExtcard h2{
+color: rgba(255, 255, 255, 0);
+font-size: 45px;
+margin: 15px 0;
+-webkit-text-stroke: 1px rgb(255, 255, 255);
+
+}.TExtCardsss .TExtcard span{
+color: var(--text_color);
+font-size: 18px;
+line-height: 35px;
+} */
 .CardsSec .titleCardsSec h1 {
-  font-size: var(--Main_Font);
+  font-size: vaTExtcardr(--Main_Font);
   font-size: 55px;
   color: var(--text_color);
   font-weight: 600;
@@ -593,6 +673,7 @@ body {
   text-align: center;
   height: 230px;
   transition: 0.6s;
+
   position: relative;
   border-radius: 12px;
 }
@@ -682,7 +763,7 @@ body {
   }
   .CardsSec .Cardss .carddd .conentCard .iconeBack {
     width: 70px;
-    height:70px;
+    height: 70px;
     position: absolute;
     top: 0;
     left: 50%;
@@ -865,6 +946,26 @@ td {
   box-shadow: 0 0 5px #41c5d5, 0 0 25px #41c5d5, 0 0 50px #41c5d5,
     0 0 100px #41c5d5;
 }
+.EndSec .convirtSecLeftConent {
+  position: relative;
+  min-width: 400px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.EndSec .convirtSecLeftConent .element {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(to top right, #41c5d5, #ffffff);
+  margin: 0;
+  scale: 0.75;
+  z-index: -1;
+}
 @media screen and (max-width: 767px) {
   .EndSec .endSecRight h1 {
     font-size: 23px;
@@ -881,8 +982,28 @@ td {
     line-height: 30px;
     margin: 20px 0;
   }
-  .EndSec .endSecRight .shadow__btn{
-font-size: 12px;
+  .EndSec .endSecRight .shadow__btn {
+    font-size: 12px;
+  }
+  .EndSec .convirtSecLeftConent {
+    position: relative;
+    min-width: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    margin: auto;
+  }
+  .EndSec .convirtSecLeftConent .element {
+    position: relative;
+    z-index: -1;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+
+    scale: 0.75;
   }
 }
 @media screen and (max-width: 991px) and (min-width: 767px) {
@@ -905,7 +1026,12 @@ font-size: 12px;
 /* GetintouchSec */
 .GetintouchSec {
   margin-top: 100px;
+}.h1111{
+  display: flex;
+  justify-content: center;
+  margin-left:0 ;
 }
+
 .GetintouchSec .GetintouchContennt {
   background: linear-gradient(-125.17deg, #424147 0%, #11101d8f 100%);
   -webkit-backdrop-filter: blur(8px);
@@ -914,13 +1040,13 @@ font-size: 12px;
   align-items: center;
   justify-content: space-between;
   border-radius: 20px;
+  overflow: hidden;
 }
 .GetintouchSec .GetintouchContennt .GetintouchSecTExt h1 {
   font-family: var(--Main_Font);
   font-size: 45px;
   font-weight: 600;
   color: var(--text_color);
-  margin: 20px 0;
 }
 .GetintouchSec .GetintouchContennt .GetintouchSecTExt p {
   font-family: var(--Second_Font);
@@ -951,6 +1077,8 @@ font-size: 12px;
   box-shadow: 0 0 5px #41c5d5, 0 0 25px #41c5d5, 0 0 50px #41c5d5,
     0 0 100px #41c5d5;
 }
+
+
 @media screen and (max-width: 991px) {
   .GetintouchSec .GetintouchContennt {
     background: linear-gradient(-125.17deg, #424147 0%, #11101d8f 100%);
