@@ -1240,7 +1240,7 @@ body {
   overflow-x: hidden;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   body {
     overflow-x: hidden;
   }
