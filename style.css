@@ -282,7 +282,8 @@ body {
   transform: translate(-50%, -50%);
   z-index: 2;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
-}.homeSec .homeSecRight .AnimationHome #coniOne{
+}
+.homeSec .homeSecRight .AnimationHome #coniOne {
   width: 30%;
   position: absolute;
   z-index: 10;
@@ -290,7 +291,8 @@ body {
   right: 20px;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
   rotate: -30deg;
-}.homeSec .homeSecRight .AnimationHome #coniTwo{
+}
+.homeSec .homeSecRight .AnimationHome #coniTwo {
   width: 50%;
   position: absolute;
   z-index: 10;
@@ -298,7 +300,8 @@ body {
   left: 20px;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
   rotate: 30deg;
-}.homeSec .homeSecRight .AnimationHome #coniThree{
+}
+.homeSec .homeSecRight .AnimationHome #coniThree {
   width: 30%;
   position: absolute;
   z-index: 10;
@@ -306,7 +309,8 @@ body {
   left: -17%;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
   rotate: 30deg;
-}.homeSec .homeSecRight .AnimationHome #coniThree{
+}
+.homeSec .homeSecRight .AnimationHome #coniThree {
   width: 30%;
   position: absolute;
   z-index: 10;
@@ -314,15 +318,20 @@ body {
   left: -10%;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
   rotate: 30deg;
-}.homeSec .homeSecRight .AnimationHome #coniFour{
+}
+.homeSec .homeSecRight .AnimationHome #coniFour {
   width: 30%;
   position: absolute;
   z-index: 10;
   top: 20%;
   right: -10%;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
-  rotate:40deg;
+  rotate: 40deg;
 }
+.homeSecRightPhone {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .homeSec .homeSecLeft {
     display: flex;
@@ -383,7 +392,19 @@ body {
   .homeSec .homeSecRight .pink__gradient{
     display: none;
   } */
+  .homeSecRightPhone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .homeSecRightPhone img {
+    width: 100%;
+  }
+  .homeSecRight img {
+    display: none;
+  }
 }
+
 @media screen and (max-width: 991px) and (min-width: 767px) {
   .homeSec .homeSecLeft {
     display: flex;
@@ -444,6 +465,14 @@ body {
   .homeSec .homeSecRight .pink__gradient{
     display: none;
   } */
+  .homeSecRightPhone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .homeSecRight img {
+    display: none;
+  }
 }
 /* Community */
 .communitySec {
@@ -628,7 +657,6 @@ body {
     margin: 20px 0;
     line-height: 20px;
   }
-
 }
 /* CardsSec */
 .CardsSec {
@@ -1026,10 +1054,11 @@ td {
 /* GetintouchSec */
 .GetintouchSec {
   margin-top: 100px;
-}.h1111{
+}
+.h1111 {
   display: flex;
   justify-content: center;
-  margin-left:0 ;
+  margin-left: 0;
 }
 
 .GetintouchSec .GetintouchContennt {
@@ -1077,8 +1106,9 @@ td {
   box-shadow: 0 0 5px #41c5d5, 0 0 25px #41c5d5, 0 0 50px #41c5d5,
     0 0 100px #41c5d5;
 }
-
-
+.GetintouchSecPhone {
+  display: none;
+}
 @media screen and (max-width: 991px) {
   .GetintouchSec .GetintouchContennt {
     background: linear-gradient(-125.17deg, #424147 0%, #11101d8f 100%);
@@ -1106,6 +1136,12 @@ td {
     font-weight: 500;
     color: var(--gray_color);
     line-height: 22px;
+  }
+  .GetintouchSecPhone {
+    display: flex;
+  }
+  .GetintouchSecDesk {
+    display: none;
   }
 }
 
@@ -1198,4 +1234,19 @@ footer .FooterEnnddIcons .endFooteriocne i {
     font-size: 28px;
     margin: 0 20px;
   }
+}
+/* immm */
+body {
+  overflow-x: hidden;
+}
+.homeSec,
+.communitySec,
+.convirtSec,
+.CardsSec,
+.TapleSec,
+.EndSec,
+.GetintouchSecPhone {
+  overflow-x: hidden;
+  padding: 30px 0;
+  margin-top: 30px;
 }
