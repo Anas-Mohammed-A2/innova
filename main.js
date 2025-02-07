@@ -328,28 +328,7 @@ tll
     x: -20,
     ease: "power1.inOut",
   });
-  const footer = document.querySelector(".bd-footer");
-  const footerElements = footer.querySelectorAll(".row > div, .FooterEnnddIcons"); // تحديد جميع العناصر الداخلية المهمة
-  
-  const observerFooter = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          gsap.from(entry.target, {
-            opacity: 0,
-            y: -40,
-            duration: 1,
-            stagger: 0.2, // يجعل العناصر تظهر واحدة تلو الأخرى
-          });
-          observerFooter.unobserve(entry.target); // لمنع إعادة تشغيل الأنيميشن
-        }
-      });
-    },
-    { threshold: 0.2 }
-  );
-  
-  // مراقبة كل عنصر داخل الفوتر على حدة
-  footerElements.forEach((el) => observerFooter.observe(el));
+
   let num1 = document.querySelector('.num1')
 let num2 = document.querySelector('.num2')
 let num3 = document.querySelector('.num3')
@@ -372,7 +351,7 @@ const CounterUpAnimation = (number , start,end ,duration)=>{
 }
 
 setTimeout(()=>{
-    CounterUpAnimation(num1 , 0 , 1000 , 2000)
+    CounterUpAnimation(num1 , 0 , 100 , 2000)
     CounterUpAnimation(num2 , 0 , 32 , 2000)
     CounterUpAnimation(num3 , 0 , 50 , 3000)
 } , 1000)
