@@ -1251,7 +1251,6 @@ body {
   .TapleSec, 
   .EndSec,
   .GetintouchSecPhone {
-    overflow-x: hidden;
     margin-top: 30px;
   }
 }
