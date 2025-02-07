@@ -158,7 +158,7 @@ tl2.to(
 gsap.from(".logoooo", {
   opacity: 0,
   delay: 0.7,
-  x: -20,
+  y: -20,
 });
 const menuItems = document.querySelector(".navLinkes");
 gsap.from(menuItems.children, {
@@ -175,12 +175,12 @@ gsap.utils.toArray(".HomeTitle").forEach((title) => {
     title,
     {
       opacity: 0,
-      x: -300,
+      y: -300,
       skewX: 65,
     },
     {
       opacity: 1,
-      x: 0,
+      y: 0,
       skewX: 0,
       duration: 1.7,
       delay: 0.5,
@@ -211,12 +211,12 @@ gsap.utils.toArray(".pragrap").forEach((pragrap) => {
     pragrap,
     {
       opacity: 0,
-      x: 150,
+      y: 150,
       skewX: 30,
     },
     {
       opacity: 1,
-      x: 0,
+      y: 0,
       skewX: 0,
       duration: 1,
       delay: 0.5,
@@ -240,25 +240,7 @@ gsap.utils.toArray("button").forEach((button) => {
   );
 });
 
-// // 
-// let tl = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: ".communitySec",
-//     start: "0% 95%",
-//     end: "80% 60%",
-//     scrub: true,
-//     duration: 2,
-//   },
-// });
-// tl.to(
-//   "#Coin",
-//   {
-//     top: "200%",
-//     left: "50%",
-//     rotateZ: "-40deg",
-//   },
-//   "Coin"
-// );
+
 const tbody = document.querySelector("tbody");
 
 const observer = new IntersectionObserver(
@@ -294,7 +276,6 @@ gsap.fromTo(
     scale: 1,
     duration: 1,
     delay: 0.2,
-    rotateZ: "360deg",
     stagger: {
       amount: 1,
     },
