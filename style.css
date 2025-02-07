@@ -1244,12 +1244,11 @@ body {
   body {
     overflow-x: hidden;
   }
-
-  /* .homeSec,
+ .homeSec,
   .communitySec,
   .convirtSec,
-  .CardsSec,
-  .TapleSec, */
+  .CardsSec, 
+  .TapleSec, 
   .EndSec,
   .GetintouchSecPhone {
     overflow-x: hidden;
